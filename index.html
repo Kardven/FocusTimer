@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./src/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Timer-Pomodoro</title>
+</head>
+<body>
+  <div id='app'>
+    <div class="container">
+      <section id="timer" class="flex">
+        <span id="minutes">04</span>
+        <span id="colon">:</span>
+        <span id="seconds">20</span>
+      </section>
+
+      <section id="controls" class="flex">
+        <button data-action="playTimer">
+          <img src="./assets/play.svg" alt="Iniciar contador">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+
+        <button data-action="stopTimer">
+          <img src="./assets/stop.svg" alt="Pausar contador">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+
+        <button data-action="addTime">
+          <img src="./assets/+.svg" alt="Adicionar 5 minutos">
+          <span class="sr-only">Adicionar 5 minutos</span>
+        </button>
+
+        <button data-action="minusTime">
+          <img src="./assets/-.svg" alt="Diminuir 5 minutos">
+          <span class="sr-only">Menos 5 min</span>
+        </button>
+      </section>
+
+    </div>
+    <section id="mode">
+      <button id="floresta" class="mode-button floresta">
+        <img src="./assets/icon1.svg" alt="arvore">
+      </button>
+    
+      <button id="chuva" class="mode-button chuva">
+        <img src="./assets/icon2.svg" alt="chuva">
+      </button>
+    
+      <button id="cafeteria" class="mode-button cafeteria">
+        <img src="./assets/icon3.svg" alt="cafeteria">
+      </button>
+      
+      <button id="lareira" class="mode-button lareira">
+        <img src="./assets/icon4.svg" alt="lareira">
+      </button>
+    </section>
+  </div>
+</body>
+</html>
