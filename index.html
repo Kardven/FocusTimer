@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="./src/main.js" defer></script>
   <link rel="stylesheet" href="style.css">
-  <title>Timer-Pomodoro</title>
+  <title>Pomodoro Timer</title>
 </head>
 <body>
-  <div id='app'>
+  <div id="app">
     <div class="container">
       <section id="timer" class="flex">
         <span id="minutes">04</span>
@@ -22,42 +22,42 @@
 
       <section id="controls" class="flex">
         <button data-action="playTimer">
-          <img src="./assets/play.svg" alt="Iniciar contador">
-          <span class="sr-only">Iniciar contador</span>
+          <img src="./assets/play.svg" alt="Start timer">
+          <span class="sr-only">Start timer</span>
         </button>
 
         <button data-action="stopTimer">
-          <img src="./assets/stop.svg" alt="Pausar contador">
-          <span class="sr-only">Pausar contador</span>
+          <img src="./assets/stop.svg" alt="Pause timer">
+          <span class="sr-only">Pause timer</span>
         </button>
 
         <button data-action="addTime">
-          <img src="./assets/+.svg" alt="Adicionar 5 minutos">
-          <span class="sr-only">Adicionar 5 minutos</span>
+          <img src="./assets/+.svg" alt="Add 5 minutes">
+          <span class="sr-only">Add 5 minutes</span>
         </button>
 
         <button data-action="minusTime">
-          <img src="./assets/-.svg" alt="Diminuir 5 minutos">
-          <span class="sr-only">Menos 5 min</span>
+          <img src="./assets/-.svg" alt="Subtract 5 minutes">
+          <span class="sr-only">Subtract 5 minutes</span>
         </button>
       </section>
 
     </div>
     <section id="mode">
-      <button id="floresta" class="mode-button floresta">
-        <img src="./assets/icon1.svg" alt="arvore">
+      <button id="forest" class="mode-button forest">
+        <img src="./assets/icon1.svg" alt="tree">
       </button>
     
-      <button id="chuva" class="mode-button chuva">
-        <img src="./assets/icon2.svg" alt="chuva">
+      <button id="rain" class="mode-button rain">
+        <img src="./assets/icon2.svg" alt="rain">
       </button>
     
-      <button id="cafeteria" class="mode-button cafeteria">
-        <img src="./assets/icon3.svg" alt="cafeteria">
+      <button id="coffeeShop" class="mode-button coffeeShop">
+        <img src="./assets/icon3.svg" alt="coffee shop">
       </button>
       
-      <button id="lareira" class="mode-button lareira">
-        <img src="./assets/icon4.svg" alt="lareira">
+      <button id="fireplace" class="mode-button fireplace">
+        <img src="./assets/icon4.svg" alt="fireplace">
       </button>
     </section>
   </div>
